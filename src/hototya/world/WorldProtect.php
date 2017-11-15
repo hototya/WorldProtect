@@ -15,6 +15,7 @@ class WorldProtect extends PluginBase implements Listener
 
     public function onEnable()
     {
+        if (!file_exists($this->getDataFolder())) mkdir($this->getDataFolder(), 0744, true);
         $config = new Config($this->getDataFolder() . "worlds.yml", Config::YAML, [
             1 => "world",
             2 => "lobby"

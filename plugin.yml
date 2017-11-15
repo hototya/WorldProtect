@@ -1,6 +1,6 @@
 name: WorldProtect
 main: hototya\world\WorldProtect
-version: 1.0.0
+version: 1.0.1
 api: [3.0.0, 3.0.0-ALPHA9]
 load: POSTWORLD
 author: hototya0141
