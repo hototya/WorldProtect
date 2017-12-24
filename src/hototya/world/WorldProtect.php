@@ -21,6 +21,7 @@ class WorldProtect extends PluginBase implements Listener
             2 => "lobby"
         ]);
         $this->worlds = array_flip($config->getAll());
+        $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
 
     public function onBlockBreak(BlockBreakEvent $event)
